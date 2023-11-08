@@ -24,4 +24,13 @@ public class SingleLinkedList {
 		node.next = head;
 		head = node;
 	}
+	
+	public void printList() {
+		Node currentNode = head;
+		while(currentNode.next != null) {
+			System.out.println(currentNode.user);
+			currentNode = currentNode.next;
+		}
+		System.out.println(currentNode.user);
+	}
 }
