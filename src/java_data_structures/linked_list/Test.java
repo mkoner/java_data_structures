@@ -16,6 +16,9 @@ public class Test {
 		System.out.println("=====================");
 		list1.deleteEnd();
 		list1.printList();
+		System.out.println("=====================");
+		list1.deleteBegin();
+		list1.printList();
 	}
 
 }

@@ -48,6 +48,12 @@ public class SingleLinkedList {
 		currentNode = null;
 	}
 	
+	public void deleteBegin() {
+		Node toBeDeleted = head;
+		head = head.next;
+		toBeDeleted = null;
+	}
+	
 	public void printList() {
 		Node currentNode = head;
 		while(currentNode.next != null) {
