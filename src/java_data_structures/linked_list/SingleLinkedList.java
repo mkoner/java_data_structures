@@ -36,6 +36,18 @@ public class SingleLinkedList {
 		currentNode.next = node;
 	}
 	
+	public void deleteEnd() {
+		Node currentNode = head;
+		Node prevNode = null;
+		while(currentNode.next != null) {
+			prevNode = currentNode;
+			currentNode = currentNode.next;
+			
+		}
+		prevNode.next = null;
+		currentNode = null;
+	}
+	
 	public void printList() {
 		Node currentNode = head;
 		while(currentNode.next != null) {

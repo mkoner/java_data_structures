@@ -13,6 +13,9 @@ public class Test {
 		list1.insertPosition(1, user3);
 		list1.insertPosition(2, user4);
 		list1.printList();
+		System.out.println("=====================");
+		list1.deleteEnd();
+		list1.printList();
 	}
 
 }
