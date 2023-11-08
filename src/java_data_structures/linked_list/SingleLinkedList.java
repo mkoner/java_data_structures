@@ -25,6 +25,17 @@ public class SingleLinkedList {
 		head = node;
 	}
 	
+	public void insertPosition(int position, User user) {
+		Node node = new Node();
+		node.user = user;
+		Node currentNode = head;
+		for(int i=0; i<position - 1; i++) {
+			currentNode = currentNode.next;
+		}
+		node.next = currentNode.next;
+		currentNode.next = node;
+	}
+	
 	public void printList() {
 		Node currentNode = head;
 		while(currentNode.next != null) {
