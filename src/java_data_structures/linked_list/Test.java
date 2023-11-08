@@ -19,6 +19,13 @@ public class Test {
 		System.out.println("=====================");
 		list1.deleteBegin();
 		list1.printList();
+		System.out.println("=====================");
+		list1.insertBegin(user2);
+		list1.insertEnd(user1);
+		list1.printList();
+		System.out.println("=====================");
+		list1.deletePosition(2);
+		list1.printList();
 	}
 
 }

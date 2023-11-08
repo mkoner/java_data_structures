@@ -54,6 +54,20 @@ public class SingleLinkedList {
 		toBeDeleted = null;
 	}
 	
+	public void deletePosition(int position) {
+		if(position == 0)
+			deleteBegin();
+		else {
+			Node currentNode = head;
+			for(int i=0; i<position - 1; i++) {
+				currentNode = currentNode.next;
+			}
+			Node toBeDeleted = currentNode.next;
+			currentNode.next = toBeDeleted.next;
+			toBeDeleted = null;
+		}
+	}
+	
 	public void printList() {
 		Node currentNode = head;
 		while(currentNode.next != null) {
