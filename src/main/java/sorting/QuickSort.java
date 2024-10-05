@@ -6,10 +6,10 @@ public class QuickSort {
         int[] array2 = {2, 4, 6, 8};
         int[] array3 = {1, 1, 1, 1};
         int[] array4 = {27, 40, 6, 2};
-        quickSort(array1);
-        quickSort(array2);
-        quickSort(array3);
-        quickSort(array4);
+        sort(array1);
+        sort(array2);
+        sort(array3);
+        sort(array4);
 
         System.out.println("After merge sort : ");
         printArray(array1);
@@ -21,7 +21,7 @@ public class QuickSort {
         printArray(array4);
     }
 
-    public static void quickSort(int[] array) {
+    public static void sort(int[] array) {
         if (array == null || array.length < 2) {
             return;
         }

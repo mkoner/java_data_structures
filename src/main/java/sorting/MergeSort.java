@@ -6,10 +6,10 @@ public class MergeSort {
         int[] array2 = {2, 4, 6, 8};
         int[] array3 = {1, 1, 1, 1};
         int[] array4 = {27, 40, 6, 2};
-        mergeSort(array1);
-        mergeSort(array2);
-        mergeSort(array3);
-        mergeSort(array4);
+        sort(array1);
+        sort(array2);
+        sort(array3);
+        sort(array4);
 
         System.out.println("After merge sort : ");
         printArray(array1);
@@ -21,7 +21,7 @@ public class MergeSort {
         printArray(array4);
 
     }
-    public static void mergeSort(int[] array) {
+    public static void sort(int[] array) {
         mergeSort(array, 0, array.length - 1);
     }
     private static void printArray(int[] array) {
