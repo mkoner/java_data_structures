@@ -2,7 +2,6 @@ package sorting;
 
 public class MergeSort {
     public static void main(String[] args) {
-        System.out.println("Hellloooo");
         int[] array1 = {12, 7, 9, 90};
         int[] array2 = {2, 4, 6, 8};
         int[] array3 = {1, 1, 1, 1};
