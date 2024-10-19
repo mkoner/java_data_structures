@@ -37,6 +37,7 @@ public class SingleLinkedList {
 	}
 	
 	public void deleteEnd() {
+		if(head == null) return;
 		Node currentNode = head;
 		Node prevNode = null;
 		while(currentNode.next != null) {
@@ -45,13 +46,12 @@ public class SingleLinkedList {
 			
 		}
 		prevNode.next = null;
-		currentNode = null;
 	}
 	
 	public void deleteBegin() {
 		Node toBeDeleted = head;
 		head = head.next;
-		toBeDeleted = null;
+		toBeDeleted.next = null;
 	}
 	
 	public void deletePosition(int position) {
